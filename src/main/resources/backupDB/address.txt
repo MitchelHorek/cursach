@@ -1,0 +1,5 @@
+СПБ:654321
+Ekaterinburg:789456
+Moscow:123456
+Penza:777777
+Rostov:111111

@@ -1,0 +1,816 @@
+682  [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 1.8.0_282 on LAPTOP-L3DVDV5C with PID 26260 (C:\Users\Ekaterina\Documents\java2\practic23\target\classes started by Ekaterina in C:\Users\Ekaterina\Documents\java2\practic23)
+685  [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v2.4.4, Spring v5.3.5
+685  [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
+1881 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+1883 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+1883 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
+1956 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class org.postgresql.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2083 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2120 [main] DEBUG o.h.jpa.internal.util.LogHelper - PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: sun.misc.Launcher$AppClassLoader@18b4aac2
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/Users/Ekaterina/Documents/java2/practic23/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		com.example.demo.Address
+		com.example.demo.model.Building
+		com.example.demo.model.User]
+	Mapping files names []
+	Properties []
+2128 [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2129 [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2140 [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2171 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.29.Final
+2172 [main] DEBUG org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2249 [main] DEBUG o.h.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2258 [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2258 [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2272 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2296 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1894e40d
+2296 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1894e40d
+2297 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1894e40d
+2297 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@2a331b46
+2297 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@109a2025
+2297 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@71978f46
+2298 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@cf518cf
+2299 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@cf518cf
+2299 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@cf518cf
+2299 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@4a67b4ec
+2300 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@4a67b4ec
+2300 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@4a67b4ec
+2300 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@48840594
+2300 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@48840594
+2301 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@48840594
+2301 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@1442f788
+2301 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@1442f788
+2302 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@1442f788
+2302 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@1bc49bc5
+2302 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@1bc49bc5
+2303 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@1bc49bc5
+2303 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@24e83d19
+2303 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@24e83d19
+2303 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@24e83d19
+2304 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@37e0292a
+2304 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@37e0292a
+2304 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@37e0292a
+2305 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@44e93c1f
+2305 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@44e93c1f
+2306 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@7c36db44
+2306 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@7c36db44
+2306 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@78cd163b
+2306 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@78cd163b
+2307 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@65a48602
+2307 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@5ec4ff02
+2308 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@612e21b9
+2308 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@612e21b9
+2361 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@312b34e3
+2361 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@312b34e3
+2362 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@44bd4b0a
+2362 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@44bd4b0a
+2363 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@67c5ac52
+2363 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@67c5ac52
+2364 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@30e9ca13
+2364 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@30e9ca13
+2365 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@1ac4ccad
+2365 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@1ac4ccad
+2367 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@323f3c96
+2367 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@323f3c96
+2369 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@290d10ef
+2369 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@290d10ef
+2374 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@5f038248
+2374 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@5f038248
+2376 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@64984b0f
+2376 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@64984b0f
+2377 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@4b790d86
+2377 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@4b790d86
+2378 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@52e04737
+2378 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@52e04737
+2378 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@52e04737
+2379 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@546e61d5
+2380 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@2819c460
+2380 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@2819c460
+2380 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@2819c460
+2381 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@7a729f84
+2381 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@5b9396d3
+2383 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@5b3a7ef5
+2383 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@5b3a7ef5
+2384 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@767191b1
+2384 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@767191b1
+2386 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@730f9695
+2386 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@730f9695
+2387 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@1dba4e06
+2387 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1dba4e06
+2388 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@3374b5bc
+2388 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@3374b5bc
+2388 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@48528634
+2389 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@660f0c
+2390 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@660f0c
+2390 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@660f0c
+2391 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4760f169
+2391 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4760f169
+2391 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4760f169
+2392 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@76563d26
+2392 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@508a65bf
+2393 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@23b8d9f3
+2393 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@23b8d9f3
+2393 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@23b8d9f3
+2394 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@6ede46f6
+2394 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@6ede46f6
+2394 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@6ede46f6
+2394 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@1229a2b7
+2395 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@4fc3c165
+2396 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@46c269e0
+2396 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@46c269e0
+2397 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5fa23c
+2397 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@252dc8c4
+2398 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@252dc8c4
+2400 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@d109c4f
+2400 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@d109c4f
+2402 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@227a47
+2404 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@70228253
+2406 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@476fe690
+2409 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@2f5ac102
+2409 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@2f5ac102
+2409 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@71a06021
+2409 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@80bfdc6
+2410 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@6edcad64
+2410 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@4c6007fb
+2410 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@3e33d73e
+2410 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@6981f8f3
+2410 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@623dcf2a
+2410 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@2eae4349
+2415 [main] DEBUG o.h.b.internal.BootstrapContextImpl - Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@68d7a2df] into BootstrapContext; was [null]
+2415 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@68d7a2df) [was null]
+2416 [main] DEBUG o.h.b.internal.BootstrapContextImpl - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@3bbf841e] into BootstrapContext; was [null]
+2416 [main] DEBUG o.h.b.internal.BootstrapContextImpl - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@4f0f7849] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@56a4f272]
+2426 [main] DEBUG o.h.b.internal.BootstrapContextImpl - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@68d7a2df]
+2426 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@68d7a2df]
+2432 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2433 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2435 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2436 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2436 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2438 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2439 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2440 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2441 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2441 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2442 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2442 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2442 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2443 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2447 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+2448 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2449 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2449 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+2449 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+2449 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+2449 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+2449 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+2449 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+2449 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+2449 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2450 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."org.postgresql.Driver"
+2450 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+2450 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2450 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+2450 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2450 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+2450 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2450 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:postgresql://localhost:5432/postgres?stringtype=unspecified
+2450 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2450 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2450 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+2451 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+2451 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+2451 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2451 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+2451 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+2451 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+2451 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2451 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+2451 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+2451 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+2451 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+2451 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"postgres"
+2451 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+2451 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2625 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5578be42
+2627 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2636 [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Database ->
+       name : PostgreSQL
+    version : 13.2
+      major : 13
+      minor : 2
+2636 [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.19
+      major : 42
+      minor : 2
+2637 [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - JDBC version : 4.2
+2654 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2672 [main] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2721 [main] DEBUG o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2730 [main] DEBUG o.h.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2732 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@4d6ccc97
+2732 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@4d6ccc97
+2732 [main] DEBUG o.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3374b5bc
+2734 [main] DEBUG o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6dc9da2d] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@1d408060]
+2739 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2752 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.example.demo.Address
+2777 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2782 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name Address
+2785 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.example.demo.Address on table address
+2801 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e9e3062
+2806 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(address), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2809 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.Address] is safe
+2809 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.Address
+2809 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+2811 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.Address:id]
+2812 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+2815 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+2820 [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2822 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(address), mappingColumn=address_text, insertable=true, updatable=true, unique=false}
+2822 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property addressText with lazy=false
+2822 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.Address:addressText]
+2822 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for addressText
+2822 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property addressText
+2824 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='address'}
+2824 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(address), mappingColumn=buildings, insertable=true, updatable=true, unique=false}
+2825 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(address), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2830 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(address), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2830 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(address), mappingColumn=buildings_key, insertable=true, updatable=true, unique=false}
+2831 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='buildings_KEY', referencedColumn='null', mappedBy='null'}
+2835 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='address'}
+2835 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='address'}
+2836 [main] DEBUG o.h.c.annotations.CollectionBinder - Collection role: com.example.demo.Address.buildings
+2838 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property buildings
+2839 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(address), mappingColumn=zip_code, insertable=true, updatable=true, unique=false}
+2839 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property zipCode with lazy=false
+2839 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.Address:zipCode]
+2839 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for zipCode
+2839 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property zipCode
+2842 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.example.demo.model.Building
+2842 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2842 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name Building
+2842 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.example.demo.model.Building on table building
+2846 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(building), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2846 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.model.Building] is safe
+2846 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.model.Building
+2846 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+2846 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.model.Building:id]
+2846 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+2846 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+2846 [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2846 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+2847 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(building), mappingColumn=address, insertable=true, updatable=true, unique=false}
+2849 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property address
+2849 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(building), mappingColumn=creation_date, insertable=true, updatable=true, unique=false}
+2850 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property creationDate with lazy=false
+2850 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.model.Building:creationDate]
+2850 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for creationDate
+2850 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property creationDate
+2850 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(building), mappingColumn=type, insertable=true, updatable=true, unique=false}
+2850 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property type with lazy=false
+2850 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.model.Building:type]
+2852 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for type
+2852 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property type
+2853 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.example.demo.model.User
+2853 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2853 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name User
+2853 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.example.demo.model.User on table user_password
+2854 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_password), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2854 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.model.User] is safe
+2854 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.model.User
+2854 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+2854 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.model.User:id]
+2854 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+2854 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+2854 [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2854 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_password), mappingColumn=login, insertable=true, updatable=true, unique=false}
+2854 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property login with lazy=false
+2855 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.model.User:login]
+2855 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for login
+2855 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property login
+2855 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_password), mappingColumn=password, insertable=true, updatable=true, unique=false}
+2855 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property password with lazy=false
+2855 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.model.User:password]
+2855 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for password
+2855 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property password
+2856 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+2856 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for addressText
+2856 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for zipCode
+2856 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+2856 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for creationDate
+2856 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for type
+2856 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+2856 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for login
+2856 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for password
+2861 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [address]
+2861 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [building]
+2862 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user_password]
+2862 [main] DEBUG o.h.cfg.CollectionSecondPass - Second pass for collection: com.example.demo.Address.buildings
+2863 [main] DEBUG o.h.c.annotations.CollectionBinder - Binding a OneToMany: com.example.demo.Address.buildings through a foreign key
+2865 [main] DEBUG o.h.c.annotations.CollectionBinder - Mapping collection: com.example.demo.Address.buildings -> building
+2868 [main] DEBUG o.h.cfg.annotations.TableBinder - Retrieving property com.example.demo.model.Building.address
+2868 [main] DEBUG o.h.cfg.CollectionSecondPass - Mapped collection key: address_id, one-to-many: com.example.demo.model.Building
+2869 [main] DEBUG o.h.b.i.InFlightMetadataCollectorImpl - Resolving reference to class: com.example.demo.Address
+2872 [main] DEBUG o.h.b.i.InFlightMetadataCollectorImpl - Resolving reference to class: com.example.demo.Address
+2892 [main] DEBUG o.h.internal.SessionFactoryImpl - Building session factory
+2893 [main] DEBUG org.hibernate.cfg.Settings - SessionFactory name : null
+2894 [main] DEBUG org.hibernate.cfg.Settings - Automatic flush during beforeCompletion(): enabled
+2895 [main] DEBUG org.hibernate.cfg.Settings - Automatic session close at end of transaction: disabled
+2895 [main] DEBUG org.hibernate.cfg.Settings - Statistics: disabled
+2895 [main] DEBUG org.hibernate.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+2896 [main] DEBUG org.hibernate.cfg.Settings - Default entity-mode: pojo
+2896 [main] DEBUG org.hibernate.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2896 [main] DEBUG org.hibernate.cfg.Settings - Allow initialization of lazy state outside session : disabled
+2896 [main] DEBUG org.hibernate.cfg.Settings - Using BatchFetchStyle : LEGACY
+2896 [main] DEBUG org.hibernate.cfg.Settings - Default batch fetch size: -1
+2896 [main] DEBUG org.hibernate.cfg.Settings - Maximum outer join fetch depth: null
+2896 [main] DEBUG org.hibernate.cfg.Settings - Default null ordering: NONE
+2896 [main] DEBUG org.hibernate.cfg.Settings - Order SQL updates by primary key: disabled
+2896 [main] DEBUG org.hibernate.cfg.Settings - Order SQL inserts for batching: disabled
+2896 [main] DEBUG org.hibernate.cfg.Settings - multi-tenancy strategy : NONE
+2896 [main] DEBUG org.hibernate.cfg.Settings - JTA Track by Thread: enabled
+2896 [main] DEBUG org.hibernate.cfg.Settings - Query language substitutions: {}
+2897 [main] DEBUG org.hibernate.cfg.Settings - Named query checking : enabled
+2897 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache: disabled
+2897 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache: disabled
+2897 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache factory: null
+2897 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache region prefix: null
+2897 [main] DEBUG org.hibernate.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+2897 [main] DEBUG org.hibernate.cfg.Settings - Structured second-level cache entries: disabled
+2897 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache direct-reference entries: disabled
+2897 [main] DEBUG org.hibernate.cfg.Settings - Automatic eviction of collection cache: disabled
+2897 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch size: 15
+2897 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch updates for versioned data: enabled
+2897 [main] DEBUG org.hibernate.cfg.Settings - Scrollable result sets: enabled
+2897 [main] DEBUG org.hibernate.cfg.Settings - Wrap result sets: disabled
+2897 [main] DEBUG org.hibernate.cfg.Settings - JDBC3 getGeneratedKeys(): enabled
+2897 [main] DEBUG org.hibernate.cfg.Settings - JDBC result set fetch size: null
+2897 [main] DEBUG org.hibernate.cfg.Settings - Connection release mode: ON_CLOSE
+2897 [main] DEBUG org.hibernate.cfg.Settings - Generate SQL with comments: disabled
+2897 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - query : disabled
+2897 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - closed-handling : disabled
+2897 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - lists : disabled
+2897 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - transactions : disabled
+2954 [main] DEBUG o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+2955 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, hibernate.id.new_generator_mappings=true, java.specification.version=1.8, file.encoding.pkg=sun.io, sun.cpu.isalist=amd64, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@4091b9c3, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=Cp1251, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\charsets.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\ext\access-bridge-64.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\ext\cldrdata.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\ext\dnsns.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\ext\jaccess.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\ext\jfxrt.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\ext\localedata.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\ext\nashorn.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\ext\sunec.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\ext\sunjce_provider.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\ext\sunmscapi.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\ext\sunpkcs11.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\ext\zipfs.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\jce.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\jfr.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\jfxswt.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\jsse.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\management-agent.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\resources.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\rt.jar;C:\Users\Ekaterina\Documents\java2\practic23\target\classes;C:\Users\Ekaterina\.m2\repository\org\springframework\boot\spring-boot-starter\2.4.4\spring-boot-starter-2.4.4.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\boot\spring-boot\2.4.4\spring-boot-2.4.4.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\spring-context\5.3.5\spring-context-5.3.5.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.4.4\spring-boot-autoconfigure-2.4.4.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.4.4\spring-boot-starter-logging-2.4.4.jar;C:\Users\Ekaterina\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Ekaterina\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar;C:\Users\Ekaterina\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\Ekaterina\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\Users\Ekaterina\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\spring-core\5.3.5\spring-core-5.3.5.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\spring-jcl\5.3.5\spring-jcl-5.3.5.jar;C:\Users\Ekaterina\.m2\repository\org\yaml\snakeyaml\1.27\snakeyaml-1.27.jar;C:\Users\Ekaterina\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Ekaterina\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Ekaterina\.m2\repository\net\bytebuddy\byte-buddy\1.10.22\byte-buddy-1.10.22.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\boot\spring-boot-configuration-processor\2.4.4\spring-boot-configuration-processor-2.4.4.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.4.4\spring-boot-starter-web-2.4.4.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.4.4\spring-boot-starter-json-2.4.4.jar;C:\Users\Ekaterina\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.4\jackson-databind-2.11.4.jar;C:\Users\Ekaterina\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.4\jackson-annotations-2.11.4.jar;C:\Users\Ekaterina\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.4\jackson-core-2.11.4.jar;C:\Users\Ekaterina\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.4\jackson-datatype-jdk8-2.11.4.jar;C:\Users\Ekaterina\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.4\jackson-datatype-jsr310-2.11.4.jar;C:\Users\Ekaterina\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.4\jackson-module-parameter-names-2.11.4.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.4.4\spring-boot-starter-tomcat-2.4.4.jar;C:\Users\Ekaterina\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.44\tomcat-embed-core-9.0.44.jar;C:\Users\Ekaterina\.m2\repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar;C:\Users\Ekaterina\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.44\tomcat-embed-websocket-9.0.44.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\spring-web\5.3.5\spring-web-5.3.5.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\spring-beans\5.3.5\spring-beans-5.3.5.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\spring-webmvc\5.3.5\spring-webmvc-5.3.5.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\spring-expression\5.3.5\spring-expression-5.3.5.jar;C:\Users\Ekaterina\.m2\repository\org\postgresql\postgresql\42.2.19\postgresql-42.2.19.jar;C:\Users\Ekaterina\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.4.4\spring-boot-starter-data-jpa-2.4.4.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.4.4\spring-boot-starter-aop-2.4.4.jar;C:\Users\Ekaterina\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.4.4\spring-boot-starter-jdbc-2.4.4.jar;C:\Users\Ekaterina\.m2\repository\com\zaxxer\HikariCP\3.4.5\HikariCP-3.4.5.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\spring-jdbc\5.3.5\spring-jdbc-5.3.5.jar;C:\Users\Ekaterina\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\Ekaterina\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\Ekaterina\.m2\repository\org\hibernate\hibernate-core\5.4.29.Final\hibernate-core-5.4.29.Final.jar;C:\Users\Ekaterina\.m2\repository\org\jboss\logging\jboss-logging\3.4.1.Final\jboss-logging-3.4.1.Final.jar;C:\Users\Ekaterina\.m2\repository\org\javassist\javassist\3.27.0-GA\javassist-3.27.0-GA.jar;C:\Users\Ekaterina\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Ekaterina\.m2\repository\org\jboss\jandex\2.2.3.Final\jandex-2.2.3.Final.jar;C:\Users\Ekaterina\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Ekaterina\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\Ekaterina\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\Ekaterina\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.3\jaxb-runtime-2.3.3.jar;C:\Users\Ekaterina\.m2\repository\org\glassfish\jaxb\txw2\2.3.3\txw2-2.3.3.jar;C:\Users\Ekaterina\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.11\istack-commons-runtime-3.0.11.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\data\spring-data-jpa\2.4.6\spring-data-jpa-2.4.6.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\data\spring-data-commons\2.4.6\spring-data-commons-2.4.6.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\spring-orm\5.3.5\spring-orm-5.3.5.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\spring-tx\5.3.5\spring-tx-5.3.5.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\spring-aspects\5.3.5\spring-aspects-5.3.5.jar;C:\Users\Ekaterina\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Ekaterina\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Ekaterina\.m2\repository\org\projectlombok\lombok\1.18.18\lombok-1.18.18.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\boot\spring-boot-starter-mail\2.4.4\spring-boot-starter-mail-2.4.4.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\spring-context-support\5.3.5\spring-context-support-5.3.5.jar;C:\Users\Ekaterina\.m2\repository\com\sun\mail\jakarta.mail\1.6.6\jakarta.mail-1.6.6.jar;C:\Users\Ekaterina\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\boot\spring-boot-starter-security\2.4.4\spring-boot-starter-security-2.4.4.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\spring-aop\5.3.5\spring-aop-5.3.5.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\security\spring-security-config\5.4.5\spring-security-config-5.4.5.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\security\spring-security-web\5.4.5\spring-security-web-5.4.5.jar;C:\Users\Ekaterina\.m2\repository\org\springframework\security\spring-security-core\5.4.5\spring-security-core-5.4.5.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\lib\idea_rt.jar, hibernate.jdbc.lob.non_contextual_creation=true, java.vm.vendor=Amazon.com Inc., sun.arch.data.model=64, user.variant=, java.vendor.url=https://aws.amazon.com/corretto/, catalina.useNaming=false, user.timezone=Europe/Moscow, os.name=Windows 10, java.vm.specification.version=1.8, javax.persistence.validation.mode=AUTO, user.country=RU, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\bin, sun.java.command=com.example.demo.DemoApplication, spring.application.admin.enabled=true, javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@29050de5, com.sun.management.jmxremote=, javax.persistence.sharedCache.mode=UNSPECIFIED, spring.liveBeansView.mbeanDomain=, sun.cpu.endian=little, user.home=C:\Users\Ekaterina, user.language=ru, java.specification.vendor=Oracle Corporation, java.home=C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre, file.separator=\, spring.output.ansi.enabled=always, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, FILE_LOG_CHARSET=UTF-8, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.awt.headless=true, sun.boot.class.path=C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\resources.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\rt.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\sunrsasign.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\jsse.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\jce.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\charsets.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\jfr.jar;C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\classes, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_282-b08, user.name=Ekaterina, spring.jmx.enabled=true, path.separator=;, os.version=10.0, java.endorsed.dirs=C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\endorsed, java.runtime.name=OpenJDK Runtime Environment, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=default, spring.beaninfo.ignore=true, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.url.bug=https://github.com/corretto/corretto-8/issues/, java.io.tmpdir=C:\Users\EKATER~1\AppData\Local\Temp\, catalina.home=C:\Users\Ekaterina\AppData\Local\Temp\tomcat.8080.5427195938774610232, java.version=1.8.0_282, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=C:\Users\Ekaterina\Documents\java2\practic23, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, PID=26260, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, CONSOLE_LOG_CHARSET=UTF-8, catalina.base=C:\Users\Ekaterina\AppData\Local\Temp\tomcat.8080.5427195938774610232, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@3610f277, java.library.path=C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_281\bin;;C:\Program Files (x86)\Rational\common;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Ekaterina\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\bin;;C:\Users\Ekaterina\AppData\Local\Programs\Microsoft VS Code\bin;., java.vendor=Amazon.com Inc., java.vm.info=mixed mode, java.vm.version=25.282-b08, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.randomIDs=true, sun.io.unicode.encoding=UnicodeLittle, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, java.ext.dirs=C:\Users\Ekaterina\.jdks\corretto-1.8.0_282\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, hibernate.connection.datasource=HikariDataSource (HikariPool-1), java.class.version=52.0}
+2969 [main] DEBUG o.h.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+2975 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4665b12
+2978 [main] DEBUG org.hibernate.type.EnumType - Using NAMED-based conversion for Enum com.example.demo.TypeBuild
+2979 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiated session factory
+2979 [main] DEBUG o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6dc9da2d] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@4c1d59cd]
+3025 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.Address] is safe
+3025 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.Address
+3036 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e86e094
+3096 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70ef0742
+3206 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.model.User] is safe
+3206 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.model.User
+3219 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.model.Building] is safe
+3220 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.model.Building
+3236 [main] DEBUG o.h.p.c.AbstractCollectionPersister - Static SQL for collection: com.example.demo.Address.buildings
+3236 [main] DEBUG o.h.p.c.AbstractCollectionPersister -  Row insert: update building set address_id=? where id=?
+3236 [main] DEBUG o.h.p.c.AbstractCollectionPersister -  Row update: update building set  where id=?
+3236 [main] DEBUG o.h.p.c.AbstractCollectionPersister -  Row delete: update building set address_id=null where address_id=? and id=?
+3236 [main] DEBUG o.h.p.c.AbstractCollectionPersister -  One-shot delete: update building set address_id=null where address_id=?
+3241 [main] DEBUG o.h.p.e.AbstractEntityPersister - Static SQL for entity: com.example.demo.Address
+3242 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Version select: select id from address where id =?
+3242 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Snapshot select: select address_.id, address_.address_text as address_2_0_, address_.zip_code as zip_code3_0_ from address address_ where address_.id=?
+3242 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Insert 0: insert into address (address_text, zip_code, id) values (?, ?, ?)
+3242 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Update 0: update address set address_text=?, zip_code=? where id=?
+3242 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Delete 0: delete from address where id=?
+3242 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Identity insert: insert into address (address_text, zip_code) values (?, ?)
+3257 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46e77c86
+3268 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@65be88ae]
+3269 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : addressText
+3270 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : buildings
+3275 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@72ce812e]
+3276 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3e26482]
+3277 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : zipCode
+3277 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+3285 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+3290 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.example.demo.Address)
+    - Returns
+       - EntityReturnImpl(entity=com.example.demo.Address, querySpaceUid=<gen:0>, path=com.example.demo.Address)
+          - CollectionAttributeFetchImpl(collection=com.example.demo.Address.buildings, querySpaceUid=<gen:1>, path=com.example.demo.Address.buildings)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.example.demo.model.Building, querySpaceUid=<gen:2>, path=com.example.demo.Address.buildings.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.demo.Address)
+          - SQL table alias mapping - address0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+3290 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.example.demo.Address [NONE]: select address0_.id as id1_0_0_, address0_.address_text as address_2_0_0_, address0_.zip_code as zip_code3_0_0_ from address address0_ where address0_.id=?
+3291 [main] DEBUG o.h.p.e.AbstractEntityPersister - Static SQL for entity: com.example.demo.model.User
+3291 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Version select: select id from user_password where id =?
+3291 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Snapshot select: select user_.id, user_.login as login2_2_, user_.password as password3_2_ from user_password user_ where user_.id=?
+3292 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Insert 0: insert into user_password (login, password, id) values (?, ?, ?)
+3292 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Update 0: update user_password set login=?, password=? where id=?
+3292 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Delete 0: delete from user_password where id=?
+3292 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Identity insert: insert into user_password (login, password) values (?, ?)
+3292 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@601eb4af]
+3292 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : login
+3292 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : password
+3292 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+3292 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+3292 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.example.demo.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.example.demo.model.User, querySpaceUid=<gen:0>, path=com.example.demo.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.demo.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+3292 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.example.demo.model.User [NONE]: select user0_.id as id1_2_0_, user0_.login as login2_2_0_, user0_.password as password3_2_0_ from user_password user0_ where user0_.id=?
+3292 [main] DEBUG o.h.p.e.AbstractEntityPersister - Static SQL for entity: com.example.demo.model.Building
+3293 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Version select: select id from building where id =?
+3293 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Snapshot select: select building_.id, building_.address_id as address_4_1_, building_.creation_date as creation2_1_, building_.type as type3_1_ from building building_ where building_.id=?
+3293 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Insert 0: insert into building (address_id, creation_date, type, id) values (?, ?, ?, ?)
+3293 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Update 0: update building set address_id=?, creation_date=?, type=? where id=?
+3293 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Delete 0: delete from building where id=?
+3293 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Identity insert: insert into building (address_id, creation_date, type) values (?, ?, ?)
+3293 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7675c171]
+3294 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+3294 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@51cab489]
+3296 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address.addressText
+3296 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address.buildings
+3296 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Property path deemed to be circular : address.buildings
+3296 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address.zipCode
+3297 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : creationDate
+3297 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : type
+3297 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+3297 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+3297 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.example.demo.model.Building)
+    - Returns
+       - EntityReturnImpl(entity=com.example.demo.model.Building, querySpaceUid=<gen:0>, path=com.example.demo.model.Building)
+          - EntityAttributeFetchImpl(entity=com.example.demo.Address, querySpaceUid=<gen:1>, path=com.example.demo.model.Building.address)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.demo.model.Building)
+          - SQL table alias mapping - building0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(address)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.example.demo.Address)
+                - SQL table alias mapping - address1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+3297 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.example.demo.model.Building [NONE]: select building0_.id as id1_1_0_, building0_.address_id as address_4_1_0_, building0_.creation_date as creation2_1_0_, building0_.type as type3_1_0_, address1_.id as id1_0_1_, address1_.address_text as address_2_0_1_, address1_.zip_code as zip_code3_0_1_ from building building0_ left outer join address address1_ on building0_.address_id=address1_.id where building0_.id=?
+3301 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@491cafec]
+3301 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@cbd40c1]
+3302 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+3302 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Property path deemed to be circular : address
+3302 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : creationDate
+3302 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : type
+3302 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+3305 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+3305 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(collection=com.example.demo.Address.buildings)
+    - Returns
+       - CollectionReturnImpl(collection=com.example.demo.Address.buildings, querySpaceUid=<gen:0>, path=[com.example.demo.Address.buildings])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.example.demo.model.Building, querySpaceUid=<gen:1>, path=[com.example.demo.Address.buildings].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.example.demo.Address.buildings)
+          - SQL table alias mapping - buildings0_
+          - alias suffix - 0_
+          - suffixed key columns - {address_4_1_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.example.demo.model.Building)
+                - SQL table alias mapping - buildings0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+3306 [main] DEBUG o.h.l.c.plan.CollectionLoader - Static select for collection com.example.demo.Address.buildings: select buildings0_.address_id as address_4_1_0_, buildings0_.id as id1_1_0_, buildings0_.id as id1_1_1_, buildings0_.address_id as address_4_1_1_, buildings0_.creation_date as creation2_1_1_, buildings0_.type as type3_1_1_ from building buildings0_ where buildings0_.address_id=?
+3317 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@214b3ab5
+3337 [main] DEBUG o.h.t.s.s.SchemaManagementToolCoordinator - No actions specified; doing nothing
+3337 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+3339 [main] DEBUG o.h.query.spi.NamedQueryRepository - Checking 0 named HQL queries
+3339 [main] DEBUG o.h.query.spi.NamedQueryRepository - Checking 0 named SQL queries
+3349 [main] DEBUG o.h.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@14b528b6
+3349 [main] DEBUG o.h.internal.SessionFactoryRegistry - Registering SessionFactory: ec83671c-4620-47d1-adc9-b5be78ac6936 (<unnamed>)
+3350 [main] DEBUG o.h.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+3378 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28c0fc48
+3447 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@201d3b05
+3532 [main] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+3621 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@25056757
+3621 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+3799 [main] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+4153 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.e.d.AddressController:
+	{GET [/address-delete]}: addressDelete(String,String)
+	{GET [/address-all]}: addressAll()
+	{GET [/address-add]}: addressAdd(String,String)
+	{GET [/address/zip-code]}: filterZipCode(Integer)
+	{GET [/address/{addressId}/buildings]}: showBuildings(Long)
+	{GET [/address/address-text]}: filterAddressText(String)
+4157 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.e.d.BuildingController:
+	{GET [/building/type]}: filterType(String)
+	{GET [/building-all]}: buildingAll()
+	{GET [/building/{buildingId}/address]}: showAddress(Long)
+	{GET [/building-add]}: buildingAdd(Building)
+	{GET [/building-delete]}: buildingDelete(Building)
+	{GET [/building/creation-date]}: filterCreationDate(String)
+4158 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.e.d.HomeController:
+	{GET [/address]}: address()
+	{GET [/home]}: home()
+	{GET [/registration]}: registration()
+	{GET [/building]}: building()
+4158 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	c.e.d.UserController:
+	{POST [/registration]}: sendRegistration(String,String)
+4160 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+4177 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+4190 [main] DEBUG _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+4283 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+4313 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 4.057 seconds (JVM running for 4.942)
+25797 [scheduling-1] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+25797 [scheduling-1] DEBUG o.h.e.t.internal.TransactionImpl - begin
+25808 [scheduling-1] INFO  c.e.demo.service.AddressService - findAll
+25820 [scheduling-1] DEBUG o.h.q.c.internal.CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Address as generatedAlias0
+25837 [scheduling-1] DEBUG o.h.h.i.QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@61b124ae
+25863 [scheduling-1] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.example.demo.Address as generatedAlias0
+25873 [scheduling-1] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+25883 [scheduling-1] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  \-[IDENT] Node: 'example'
+       |     |  |  \-[IDENT] Node: 'demo'
+       |     |  \-[IDENT] Node: 'Address'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+25906 [scheduling-1] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+25923 [scheduling-1] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : com.example.demo.Address (generatedAlias0) -> address0_
+25924 [scheduling-1] DEBUG o.h.h.i.ast.tree.FromReferenceNode - Resolved : generatedAlias0 -> address0_.id
+25927 [scheduling-1] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+25927 [scheduling-1] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} address0_.id ) ( FromClause{level=1} address address0_ ) )
+25935 [scheduling-1] DEBUG o.h.h.i.ast.util.JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Address): [address]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(com.example.demo.Address)
+    |  | originalText: generatedAlias0
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+25938 [scheduling-1] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [address address0_]
+25939 [scheduling-1] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+25939 [scheduling-1] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (address)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'address0_.id as id1_0_' {alias=generatedAlias0, className=com.example.demo.Address, tableAlias=address0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'address0_.address_text as address_2_0_, address0_.zip_code as zip_code3_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[address0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'address address0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=address,tableAlias=address0_,origin=null,columns={,className=com.example.demo.Address}}
+
+25939 [scheduling-1] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+25945 [scheduling-1] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: select generatedAlias0 from com.example.demo.Address as generatedAlias0
+25945 [scheduling-1] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select address0_.id as id1_0_, address0_.address_text as address_2_0_, address0_.zip_code as zip_code3_0_ from address address0_
+25945 [scheduling-1] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+25978 [scheduling-1] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.address_text as address_2_0_, address0_.zip_code as zip_code3_0_ from address address0_
+25988 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result set row: 0
+25995 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.example.demo.Address#2]
+26008 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result set row: 1
+26009 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.example.demo.Address#3]
+26009 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result set row: 2
+26009 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.example.demo.Address#6]
+26009 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result set row: 3
+26009 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.example.demo.Address#7]
+26010 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result set row: 4
+26010 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.example.demo.Address#9]
+26014 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [com.example.demo.Address#2]
+26016 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `addressText` : value = СПБ
+26017 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`addressText`)  - enhanced for lazy-loading? - false
+26017 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `buildings` : value = NOT NULL COLLECTION
+26017 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`buildings`)  - enhanced for lazy-loading? - false
+26029 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `zipCode` : value = 654321
+26029 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`zipCode`)  - enhanced for lazy-loading? - false
+26031 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.Address#2]
+26031 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [com.example.demo.Address#3]
+26031 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `addressText` : value = Ekaterinburg
+26031 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`addressText`)  - enhanced for lazy-loading? - false
+26031 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `buildings` : value = NOT NULL COLLECTION
+26031 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`buildings`)  - enhanced for lazy-loading? - false
+26031 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `zipCode` : value = 789456
+26032 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`zipCode`)  - enhanced for lazy-loading? - false
+26032 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.Address#3]
+26032 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [com.example.demo.Address#6]
+26032 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `addressText` : value = Moscow
+26032 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`addressText`)  - enhanced for lazy-loading? - false
+26032 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `buildings` : value = NOT NULL COLLECTION
+26032 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`buildings`)  - enhanced for lazy-loading? - false
+26032 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `zipCode` : value = 123456
+26032 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`zipCode`)  - enhanced for lazy-loading? - false
+26032 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.Address#6]
+26032 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [com.example.demo.Address#7]
+26032 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `addressText` : value = Penza
+26032 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`addressText`)  - enhanced for lazy-loading? - false
+26032 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `buildings` : value = NOT NULL COLLECTION
+26032 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`buildings`)  - enhanced for lazy-loading? - false
+26033 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `zipCode` : value = 777777
+26033 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`zipCode`)  - enhanced for lazy-loading? - false
+26033 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.Address#7]
+26033 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [com.example.demo.Address#9]
+26033 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `addressText` : value = Rostov
+26033 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`addressText`)  - enhanced for lazy-loading? - false
+26033 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `buildings` : value = NOT NULL COLLECTION
+26033 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`buildings`)  - enhanced for lazy-loading? - false
+26033 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `zipCode` : value = 111111
+26033 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`zipCode`)  - enhanced for lazy-loading? - false
+26033 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.Address#9]
+26042 [scheduling-1] DEBUG o.h.e.t.internal.TransactionImpl - committing
+26043 [scheduling-1] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+26050 [scheduling-1] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+26059 [scheduling-1] DEBUG o.h.engine.internal.Collections - Collection found: [com.example.demo.Address.buildings#2], was: [com.example.demo.Address.buildings#2] (uninitialized)
+26059 [scheduling-1] DEBUG o.h.engine.internal.Collections - Collection found: [com.example.demo.Address.buildings#3], was: [com.example.demo.Address.buildings#3] (uninitialized)
+26059 [scheduling-1] DEBUG o.h.engine.internal.Collections - Collection found: [com.example.demo.Address.buildings#6], was: [com.example.demo.Address.buildings#6] (uninitialized)
+26059 [scheduling-1] DEBUG o.h.engine.internal.Collections - Collection found: [com.example.demo.Address.buildings#7], was: [com.example.demo.Address.buildings#7] (uninitialized)
+26059 [scheduling-1] DEBUG o.h.engine.internal.Collections - Collection found: [com.example.demo.Address.buildings#9], was: [com.example.demo.Address.buildings#9] (uninitialized)
+26061 [scheduling-1] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 5 objects
+26061 [scheduling-1] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 5 collections
+26063 [scheduling-1] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+26063 [scheduling-1] DEBUG o.h.internal.util.EntityPrinter - com.example.demo.Address{zipCode=111111, buildings=<uninitialized>, addressText=Rostov, id=9}
+26064 [scheduling-1] DEBUG o.h.internal.util.EntityPrinter - com.example.demo.Address{zipCode=654321, buildings=<uninitialized>, addressText=СПБ, id=2}
+26064 [scheduling-1] DEBUG o.h.internal.util.EntityPrinter - com.example.demo.Address{zipCode=789456, buildings=<uninitialized>, addressText=Ekaterinburg, id=3}
+26064 [scheduling-1] DEBUG o.h.internal.util.EntityPrinter - com.example.demo.Address{zipCode=123456, buildings=<uninitialized>, addressText=Moscow, id=6}
+26064 [scheduling-1] DEBUG o.h.internal.util.EntityPrinter - com.example.demo.Address{zipCode=777777, buildings=<uninitialized>, addressText=Penza, id=7}
+26073 [scheduling-1] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+26074 [scheduling-1] DEBUG o.h.e.t.internal.TransactionImpl - begin
+26081 [scheduling-1] INFO  c.e.demo.service.BuildingService - findAll
+26082 [scheduling-1] DEBUG o.h.q.c.internal.CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Building as generatedAlias0
+26082 [scheduling-1] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.example.demo.model.Building as generatedAlias0
+26083 [scheduling-1] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+26085 [scheduling-1] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  \-[IDENT] Node: 'example'
+       |     |  |  \-[IDENT] Node: 'demo'
+       |     |  \-[IDENT] Node: 'Building'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+26085 [scheduling-1] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+26085 [scheduling-1] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : com.example.demo.model.Building (generatedAlias0) -> building0_
+26086 [scheduling-1] DEBUG o.h.h.i.ast.tree.FromReferenceNode - Resolved : generatedAlias0 -> building0_.id
+26086 [scheduling-1] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+26086 [scheduling-1] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} building0_.id ) ( FromClause{level=1} building building0_ ) )
+26087 [scheduling-1] DEBUG o.h.h.i.ast.util.JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Building): [building]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(com.example.demo.model.Building)
+    |  | originalText: generatedAlias0
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+26087 [scheduling-1] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [building building0_]
+26088 [scheduling-1] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+26088 [scheduling-1] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (building)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'building0_.id as id1_1_' {alias=generatedAlias0, className=com.example.demo.model.Building, tableAlias=building0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'building0_.address_id as address_4_1_, building0_.creation_date as creation2_1_, building0_.type as type3_1_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[building0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'building building0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=building,tableAlias=building0_,origin=null,columns={,className=com.example.demo.model.Building}}
+
+26088 [scheduling-1] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+26088 [scheduling-1] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: select generatedAlias0 from com.example.demo.model.Building as generatedAlias0
+26088 [scheduling-1] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select building0_.id as id1_1_, building0_.address_id as address_4_1_, building0_.creation_date as creation2_1_, building0_.type as type3_1_ from building building0_
+26088 [scheduling-1] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+26089 [scheduling-1] DEBUG org.hibernate.SQL - select building0_.id as id1_1_, building0_.address_id as address_4_1_, building0_.creation_date as creation2_1_, building0_.type as type3_1_ from building building0_
+26091 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result set row: 0
+26091 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.example.demo.model.Building#2]
+26092 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result set row: 1
+26092 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.example.demo.model.Building#1]
+26092 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result set row: 2
+26092 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.example.demo.model.Building#3]
+26092 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result set row: 3
+26092 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.example.demo.model.Building#4]
+26093 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result set row: 4
+26093 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.example.demo.model.Building#7]
+26093 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result set row: 5
+26093 [scheduling-1] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.example.demo.model.Building#8]
+26093 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [com.example.demo.model.Building#2]
+26093 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 2
+26093 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+26100 [scheduling-1] DEBUG org.hibernate.SQL - select address0_.id as id1_0_0_, address0_.address_text as address_2_0_0_, address0_.zip_code as zip_code3_0_0_ from address address0_ where address0_.id=?
+26110 [scheduling-1] DEBUG o.h.l.p.e.p.i.EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+26111 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [com.example.demo.Address#2]
+26111 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `addressText` : value = СПБ
+26112 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`addressText`)  - enhanced for lazy-loading? - false
+26112 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `buildings` : value = NOT NULL COLLECTION
+26112 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`buildings`)  - enhanced for lazy-loading? - false
+26112 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `zipCode` : value = 654321
+26112 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`zipCode`)  - enhanced for lazy-loading? - false
+26112 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.Address#2]
+26112 [scheduling-1] DEBUG o.h.l.e.p.AbstractLoadPlanBasedEntityLoader - Done entity load : com.example.demo.Address#2
+26113 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `creationDate` : value = 2021-03-31
+26113 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`creationDate`)  - enhanced for lazy-loading? - false
+26113 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `type` : value = CYRPICH
+26113 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`type`)  - enhanced for lazy-loading? - false
+26113 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.model.Building#2]
+26113 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [com.example.demo.model.Building#1]
+26114 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 2
+26114 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+26114 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `creationDate` : value = 2021-03-25
+26114 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`creationDate`)  - enhanced for lazy-loading? - false
+26114 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `type` : value = PANEL
+26114 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`type`)  - enhanced for lazy-loading? - false
+26114 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.model.Building#1]
+26114 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [com.example.demo.model.Building#3]
+26114 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = 3
+26115 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+26115 [scheduling-1] DEBUG org.hibernate.SQL - select address0_.id as id1_0_0_, address0_.address_text as address_2_0_0_, address0_.zip_code as zip_code3_0_0_ from address address0_ where address0_.id=?
+26116 [scheduling-1] DEBUG o.h.l.p.e.p.i.EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+26116 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [com.example.demo.Address#3]
+26117 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `addressText` : value = Ekaterinburg
+26117 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`addressText`)  - enhanced for lazy-loading? - false
+26117 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `buildings` : value = NOT NULL COLLECTION
+26117 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`buildings`)  - enhanced for lazy-loading? - false
+26117 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `zipCode` : value = 789456
+26117 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`zipCode`)  - enhanced for lazy-loading? - false
+26117 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.Address#3]
+26117 [scheduling-1] DEBUG o.h.l.e.p.AbstractLoadPlanBasedEntityLoader - Done entity load : com.example.demo.Address#3
+26118 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `creationDate` : value = 2021-03-04
+26118 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`creationDate`)  - enhanced for lazy-loading? - false
+26118 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `type` : value = PANEL
+26118 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`type`)  - enhanced for lazy-loading? - false
+26118 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.model.Building#3]
+26118 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [com.example.demo.model.Building#4]
+26118 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = null
+26118 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+26118 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `creationDate` : value = 2021-04-28
+26119 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`creationDate`)  - enhanced for lazy-loading? - false
+26119 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `type` : value = PANEL
+26119 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`type`)  - enhanced for lazy-loading? - false
+26119 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.model.Building#4]
+26119 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [com.example.demo.model.Building#7]
+26119 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = null
+26119 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+26120 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `creationDate` : value = 2017-04-28
+26120 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`creationDate`)  - enhanced for lazy-loading? - false
+26120 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `type` : value = CYRPICH
+26120 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`type`)  - enhanced for lazy-loading? - false
+26120 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.model.Building#7]
+26120 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [com.example.demo.model.Building#8]
+26120 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `address` : value = null
+26120 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+26120 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `creationDate` : value = 2021-05-02
+26120 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`creationDate`)  - enhanced for lazy-loading? - false
+26120 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `type` : value = PANEL
+26120 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`type`)  - enhanced for lazy-loading? - false
+26120 [scheduling-1] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.example.demo.model.Building#8]
+26121 [scheduling-1] DEBUG o.h.e.t.internal.TransactionImpl - committing
+26121 [scheduling-1] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+26122 [scheduling-1] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+26122 [scheduling-1] DEBUG o.h.engine.internal.Collections - Collection found: [com.example.demo.Address.buildings#2], was: [com.example.demo.Address.buildings#2] (uninitialized)
+26123 [scheduling-1] DEBUG o.h.engine.internal.Collections - Collection found: [com.example.demo.Address.buildings#3], was: [com.example.demo.Address.buildings#3] (uninitialized)
+26123 [scheduling-1] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 8 objects
+26123 [scheduling-1] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
+26123 [scheduling-1] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+26123 [scheduling-1] DEBUG o.h.internal.util.EntityPrinter - com.example.demo.Address{zipCode=654321, buildings=<uninitialized>, addressText=СПБ, id=2}
+26123 [scheduling-1] DEBUG o.h.internal.util.EntityPrinter - com.example.demo.Address{zipCode=789456, buildings=<uninitialized>, addressText=Ekaterinburg, id=3}
+26123 [scheduling-1] DEBUG o.h.internal.util.EntityPrinter - com.example.demo.model.Building{address=com.example.demo.Address#2, id=1, creationDate=2021-03-25, type=PANEL}
+26124 [scheduling-1] DEBUG o.h.internal.util.EntityPrinter - com.example.demo.model.Building{address=com.example.demo.Address#2, id=2, creationDate=2021-03-31, type=CYRPICH}
+26124 [scheduling-1] DEBUG o.h.internal.util.EntityPrinter - com.example.demo.model.Building{address=com.example.demo.Address#3, id=3, creationDate=2021-03-04, type=PANEL}
+26124 [scheduling-1] DEBUG o.h.internal.util.EntityPrinter - com.example.demo.model.Building{address=null, id=4, creationDate=2021-04-28, type=PANEL}
+26124 [scheduling-1] DEBUG o.h.internal.util.EntityPrinter - com.example.demo.model.Building{address=null, id=7, creationDate=2017-04-28, type=CYRPICH}
+26124 [scheduling-1] DEBUG o.h.internal.util.EntityPrinter - com.example.demo.model.Building{address=null, id=8, creationDate=2021-05-02, type=PANEL}
+32745 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+32745 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.

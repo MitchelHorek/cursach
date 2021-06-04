@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/static/main.css" type="text/css">
 </head>
 <body>
-<p>СДЕЛАЙ ЗАКАЗ</p>
+<h1 class="order_header_title">СДЕЛАЙ ЗАКАЗИК♥</h1>
 <form class="decor" method="post" action="/order">
     <div class="form-left-decoration"></div>
     <div class="form-right-decoration"></div>

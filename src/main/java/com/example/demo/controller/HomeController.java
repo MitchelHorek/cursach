@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 @Controller
 public class HomeController {
@@ -19,22 +20,25 @@ public class HomeController {
     @RequestMapping(method = RequestMethod.GET, value = "")
     public String home(Model model) {
         File folder = null;
+        HashMap<String, ArrayList<String>> mapImages = new HashMap<>();
         try {
             folder = ResourceUtils.getFile("classpath:static/images");
 
-            for (final File fileEntry : folder.listFiles()) {
-                if (fileEntry.isDirectory()) {
+            for (final File folderEntry : folder.listFiles()) {
+                if (folderEntry.isDirectory()) {
                     ArrayList<String> images = new ArrayList<>();
-                    for (File image : fileEntry.listFiles()) {
+                    for (File image : folderEntry.listFiles()) {
                         images.add(image.getName());
                     }
-                    model.addAttribute(fileEntry.getName(), images);
+                    mapImages.put(folderEntry.getName(),images);
+
                 }
             }
         } catch (FileNotFoundException e) {
             System.out.println("НЕ НАЙДЕНО");
             e.printStackTrace();
         }
+        model.addAttribute("mapImages", mapImages);
         model.addAttribute("types", typeMenuService.findAll());
         return "home";
     }

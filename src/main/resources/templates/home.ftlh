@@ -51,13 +51,22 @@
 
 
                     <div class="snacks__list__item">
+                        <#list mapImages?keys as key>
+                            <#if key == type.name>
+                                <#list mapImages[key] as image>
+                                    <a href="#" class="menu__list__item__img">
+                                        <img src="/static/images/${key}/${image}" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS" class="img_transparent">
 
-                        <a href="#" class="menu__list__item__img">
+                                    </a>
+                                </#list>
+                            </#if>
+                        </#list>
+                        <!--<a href="#" class="menu__list__item__img">
                            <img src="/static/images/bananaSmileMenu/bananaMimoza.jpg" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS" class="img_transparent">
                         </a>
                         <a href="#" class="menu__list__item__img">
                             <img src="/static/images/bananaSmileMenu/BLOODY-BANANA-SHAKE.jpg" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS" class="img_transparent">
-                        </a>
+                        </a>-->
 
                     </div>
                 </div>
@@ -73,27 +82,6 @@
             <div class="col">
                 SOS.CAFE<br>Все права защищены
             </div>
-            <a class="yadzen" style="position: absolute; left: 60px; bottom: -40px; text-decoration: none; color: #FFF;" href="https://zen.yandex.ru/id/5bd2cbff1ea36b00aa3a01ff">
-                Читайте нас в Яндекс Дзен -
-                <svg width="30px" height="25px" style="position: absolute; right: -30px; top: -2px;" viewBox="0 0 30 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Symbols" stroke="none" stroke-width="1">
-                        <g id="Icons-/-yzen" fill="#FFF">
-                            <g id="Group-4">
-                                <polygon id="Fill-1" points="0 10.0868 30 21.7278 30 11.6408 0 0.0008"></polygon>
-                                <polygon id="Fill-2" points="0 43.547 30 55.188 30 45.1 0 33.461"></polygon>
-                                <polygon id="Fill-3" points="12.0674 36.7554 1.2034 32.3534 18.2024 18.5384 28.6924 22.6594"></polygon>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-            </a>
-            <a class="sitemap-link desktop_hide" href="/sitemap/">Карта сайта</a>
-        </div>
-        <div class="footer__center_col">
-            <a href="https://twitter.com/soscafemoscow" target="_blank" class="footer__tw"></a>
-            <a href="https://www.facebook.com/soscafemoscow/" target="_blank" class="footer__fb"></a>
-            <a href="http://instagram.com/sos.cafe.moscow/" target="_blank" class="footer__insta"></a>
-            <a href="https://vk.com/soscafemoscow" target="_blank" class="footer__vk"></a>
         </div>
         <div class="footer__bottom_text ">
             <div class="footer_adr_block">
@@ -104,14 +92,7 @@
             </div>
         </div>
         <div class="footer__left_col">
-            <div class="footer_menu">
-                <a href="/about/" class="footer_menu_item">о нас</a>
-                <a href="/menu/" class="footer_menu_item">меню</a>
-                <a href="/news/" class="footer_menu_item">new<span class="text_red">sos</span></a>
-                <a href="/blog/" class="footer_menu_item">блог</a>
-                <a href="/contacts/" class="footer_menu_item">адрес</a>
-                <a href="/sales/" class="footer_menu_item">акции</a><br>
-            </div>
+
         </div>
     </div>
 

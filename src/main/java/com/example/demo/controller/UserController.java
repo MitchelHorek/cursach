@@ -32,7 +32,7 @@ public class UserController {
         if(emailService!=null) {
             emailService.send(mail, "регистрация на сайте кафе", "СПАСИБО ЗА ВХОД");
         }
-        return new RedirectView("home");
+        return new RedirectView("/");
 
     }
 

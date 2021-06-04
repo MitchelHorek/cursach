@@ -28,7 +28,17 @@ h1.menu_header_title {
     font-weight: 900;
     line-height: 1;
     color: #ee3c2d;
+    text-align: center;
 }
+h1.order_header_title {
+    padding-top: 10px;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1;
+    color: #FDF5E6;
+    text-align: center;
+}
+
 
 .menu-flexbox__item__title {
     font-size: 30px;
@@ -249,7 +259,7 @@ a {
 }
 
 .section_menu {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .slider_mob_arrow,
@@ -263,7 +273,9 @@ a {
     align-items: flex-start;
     justify-content: center;
 }
-
+.slider_mob_arrow:last-child{
+    margin-bottom: 75px;
+}
 .snacks__list__item {
     text-align: center;
     text-decoration: unset;
@@ -272,7 +284,9 @@ a {
     margin-right: 0.1%;
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .menu__list__item__img {
@@ -286,14 +300,14 @@ a {
     overflow: hidden;
     width: 300px;
     height: 300px;
-    margin-bottom: 13px;
+    margin: 13px 2px;
 }
 .menu__list__item__img:hover {
     box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.16);
 }
 
 .menu__list__item__img {
-    padding-bottom: 100%;
+
     position: relative;
     background: #fff;
     outline: none;
@@ -469,7 +483,6 @@ a {
     bottom: 0;
     margin-top: 183px;
     color: #ffffff;
-    padding-top: 34px;
     font-family: 'Circe-Bold', sans-serif;
 }
 
@@ -489,6 +502,7 @@ a {
     text-align: center;
     width: 100%;
 }
+
 
 .footer__bottom_text--main {
     bottom: 116px;

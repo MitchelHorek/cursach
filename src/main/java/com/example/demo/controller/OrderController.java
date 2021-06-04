@@ -43,7 +43,7 @@ public class OrderController {
             return new RedirectView("error");
         }
         if(emailService!=null) {
-            emailService.send(mail, "ВАШ ЗАКАЗ ПРИНЯТ НА ОБРАБОТКУ", "СПАСИБО ЗА ЗАКАЗ: <br>" + comment);
+            emailService.send(mail, "ВАШ ЗАКАЗ ПРИНЯТ НА ОБРАБОТКУ", "СПАСИБО ЗА ЗАКАЗ: " +"\n" + comment);
             emailService.send(myMail, "ПРИШЕЛ ЗАКАЗ", "ПОМОТРИ: "+"\n" + comment + "\n" +"ПОЧТА ЗАКАЗЧИКА: " +"\n" + mail);
         }
         return new RedirectView("/");

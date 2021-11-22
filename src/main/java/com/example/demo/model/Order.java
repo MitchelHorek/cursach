@@ -15,7 +15,7 @@ public class Order {
     private String comment;
     private String userName;
     private String mail;
-
+    //\! chcp 1251
 
     public Order(){
 

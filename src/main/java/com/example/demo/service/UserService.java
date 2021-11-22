@@ -14,10 +14,13 @@ import javax.transaction.Transactional;
 @Service
 @Transactional
 public class UserService implements UserDetailsService {
+    private final UserRepository userRepository;//подключили репозиторий
+    private final PasswordEncoder passwordEncoder;
     @Autowired
-    private UserRepository userRepository;//подключили репозиторий
-    @Autowired
-    private PasswordEncoder passwordEncoder;
+    public UserService(UserRepository userRepository, PasswordEncoder passwordEncoder) {
+        this.userRepository = userRepository;
+        this.passwordEncoder = passwordEncoder;
+    }
 
     public boolean userAdd(User user){
         if (userRepository.findByLogin(user.getUsername())!=null){

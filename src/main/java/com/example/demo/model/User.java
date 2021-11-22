@@ -24,6 +24,11 @@ public class User implements UserDetails {
     private String name;
     private String otchestvo;
     private String login;
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
     private String password;
 
     public User(){

@@ -17,7 +17,7 @@ import java.util.HashMap;
 public class HomeController {
     @Autowired
     private TypeMenuService typeMenuService;
-    @RequestMapping(method = RequestMethod.GET, value = "")
+    @RequestMapping(method = RequestMethod.GET, value = "/home")
     public String home(Model model) {
         File folder = null;
         HashMap<String, ArrayList<String>> mapImages = new HashMap<>();
@@ -42,14 +42,7 @@ public class HomeController {
         model.addAttribute("types", typeMenuService.findAll());
         return "home";
     }
-    @RequestMapping(method = RequestMethod.GET, value = "/address")
-    public String address() {
-        return "address.html";
-    }
-    @RequestMapping(method = RequestMethod.GET, value = "/building")
-    public String building() {
-        return "building.html";
-    }
+
     @RequestMapping(method = RequestMethod.GET, value = "/registration")
     public String registration() {
         return "registration";
